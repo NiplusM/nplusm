@@ -285,13 +285,13 @@
 
   update('tonwallet', {
     headline: 'Making a crypto transfer feel like sending a Telegram message',
-    deck: 'I created TON Wallet’s visual identity from scratch and led its Telegram experience across onboarding, portfolio, transfer, exchange, confirmation, and recovery.',
+    deck: 'I created TON Wallet’s visual identity and design system from scratch and led its Telegram experience across onboarding, portfolio, transfer, exchange, confirmation, and recovery.',
     integratedStory: {
       problemEvidence: 'Crypto wallets exposed addresses, networks, fees, and irreversible confirmation to people who expected the speed and familiarity of Telegram. At the start of the native-integration quarter, 382,148 TON wallets were registered; growth depended on removing cross-app handoffs and copied-address risk before the first successful transfer.',
       directionNarrative: 'Use Telegram identity and recipient context to remove address handling, while keeping asset, network, fee, and irreversible confirmation visible at the moment of decision.',
       workNarrative: [
         'I led product design and stayed hands-on across entry from Telegram, first-use education, funding, portfolio, recipient selection, transfer, exchange, and transaction states. The key decision was to use Telegram identity for recipient selection, then reveal network, fees, and irreversible actions when they affected the decision.',
-        'I created TON Wallet’s visual identity from scratch and applied it across the core product experience. The identity gave Wallet its own visual language while the interaction design followed familiar Telegram conventions.',
+        'I created TON Wallet’s visual identity and design system from scratch and applied them across the core product experience. Reusable components and transaction states connected onboarding, portfolio, transfer, and exchange. Wallet had its own visual language while the interaction design followed familiar Telegram conventions.',
         'The prototypes covered the full journey, not just the send screen: onboarding, choosing a recipient, understanding the amount and fee, confirming a transaction, waiting for it to complete, and recovering from a failure.',
         'I also worked through the cases that could interrupt that journey: an invalid or wrong recipient, an expired exchange quote, a changed network fee, insufficient funds, and a pending or failed transaction. Pending, failed, and completed transfers needed distinct states so the interface did not suggest that an irreversible payment could simply be undone.'
       ],
@@ -316,7 +316,7 @@
       { type: 'image', src: 'assets/ton-wallet-official-exchange.png', title: 'Keep exchange in the same product shell', dark: true, integrity: 'Official Wallet interface', caption: 'Exchange reused the same review pattern for the asset pair, quote, fee, and final amount. The flow also covered an expired quote, a fee change, and insufficient funds, rather than treating every exchange as an immediate success.' }
     ],
     impact: {
-      'My contribution': 'Created TON Wallet’s visual identity from scratch and led hands-on design across onboarding, portfolio, transfer, exchange, transaction states, and Telegram integration.',
+      'My contribution': 'Created TON Wallet’s visual identity and design system from scratch and led hands-on design across onboarding, portfolio, transfer, exchange, transaction states, and Telegram integration.',
       'Validation evidence': 'Prototypes covered onboarding, recipient selection, amount and fee comprehension, confirmation, pending states, and recovery.',
       'Measurement framework': 'Onboarding completion, funded wallets, transaction success, repeat transactions, failed-transfer recovery, and exchange conversion.'
     },
@@ -401,13 +401,13 @@
 
   update('simple', {
     headline: 'Turning a fasting timer into a daily programme',
-    deck: 'I created Simple’s visual identity from scratch and connected personalisation, daily guidance, reflection, and progress into a product people could use beyond the fasting timer.',
+    deck: 'I created Simple’s visual identity and design system from scratch and connected personalisation, daily guidance, reflection, and progress into a product people could use beyond the fasting timer.',
     integratedStory: {
       problemEvidence: 'The timer answered one question—how long have I fasted?—but it did not create a reason to return after the timer stopped. During the pivot the product was growing quickly—350,000 new users in December 2019 and more than one million users by February 2020—so daily guidance, reflection, and visible progress had become a retention problem at scale.',
       directionNarrative: 'Turn personal inputs into a useful next action every day, then close the loop with reflection and visible progress.',
       workNarrative: [
         'I designed the connected loop from onboarding and profile inputs to a Personal Program, today’s state, the next action, Journal, and progress.',
-        'I created Simple’s complete visual identity from scratch, then translated it into the UI kit, microinteractions, and multi-platform layouts. I also built the prototypes and product-design process used to deliver the daily programme.'
+        'I created Simple’s complete visual identity and design system from scratch, including the UI kit, microinteractions, and multi-platform layouts. I also built the prototypes and product-design process used to deliver the daily programme.'
       ],
       resultNarrative: 'The daily programme launched during my 2019–2020 product period. Simple reported 350,000 new users in December 2019 and more than one million iOS and Android users by February 2020.'
     },
@@ -421,7 +421,7 @@
     proof: [['350K', 'New users in December 2019'], ['1M+', 'iOS and Android users by February 2020'], ['Daily programme', 'Product pivot shipped']],
     journey: [['Understand', 'Collect the goals and routine needed for the first useful programme.'], ['Guide', 'Show the current state and the next useful action.'], ['Reflect', 'Capture meals, activity, and feelings without creating a second dashboard.'], ['Progress', 'Connect repeated behaviour to weight, goals, and meaningful recaps.']],
     impact: {
-      'My contribution': 'Created the visual identity from scratch and designed the daily programme, UI kit, prototypes, microinteractions, and multi-platform delivery system.',
+      'My contribution': 'Created the visual identity and design system from scratch, and designed the daily programme, prototypes, microinteractions, and multi-platform delivery system.',
       'Validation evidence': 'The product moved from a single timer to a daily loop spanning personalisation, guidance, reflection, and progress.'
     }
   });
