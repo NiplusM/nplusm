@@ -106,6 +106,7 @@ a:focus-visible, button:focus-visible {
 }
 .site-nav__name { justify-self: start; }
 .site-nav__links { display: flex; gap: 28px; }
+.site-nav__cv--mobile-only { display: none; }
 .site-nav__contact { justify-self: end; }
 .site-nav a { border-bottom: 1px solid transparent; }
 .site-nav a:hover { border-color: currentColor; }
@@ -1506,9 +1507,12 @@ a:focus-visible, button:focus-visible {
 }
 
 @media (max-width: 767px) {
-  .site-nav { grid-template-columns: 1fr auto; min-height: 58px; }
-  .site-nav__links { display: none; }
-  .site-nav__contact { grid-column: 2; }
+  .site-nav { grid-template-columns: minmax(0, 1fr) auto auto; min-height: 58px; gap: 10px; }
+  .site-nav__name { white-space: nowrap; }
+  .site-nav__links { display: flex; gap: 0; }
+  .site-nav__links > a:not(.site-nav__cv) { display: none; }
+  .site-nav__links > .site-nav__cv { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+  .site-nav__contact { grid-column: 3; display: inline-flex; align-items: center; min-height: 44px; }
   .hero { padding-top: 64px; padding-bottom: 58px; gap: 38px; }
   .hero h1 { font-size: clamp(40px, 11.7vw, 58px); line-height: .98; }
   .publication-card { min-height: 0; aspect-ratio: auto; grid-template-rows: auto auto; padding-bottom: 24px; }
@@ -4398,6 +4402,21 @@ a:focus-visible, button:focus-visible {
   object-position: center !important;
   transform: none !important;
   background: transparent !important;
+}
+
+/* One payment screen in mobile previews; keep the case's narrative steps. */
+@media (max-width: 767px) {
+  .work-card__media.koshelek-interface-crops {
+    grid-template-columns: minmax(0, 260px) !important;
+    justify-content: center !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    padding: 12px !important;
+  }
+  .work-card__media.koshelek-interface-crops > .koshelek-screen-crop:not(:last-child) {
+    display: none !important;
+  }
 }
 
 @media (max-width: 640px) {
