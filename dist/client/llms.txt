@@ -1,0 +1,27 @@
+# Nikita Mukhortov — Product Design Portfolio
+
+Canonical site: https://niplusm.github.io/nplusm/
+
+Nikita Mukhortov is a Product Design Lead in Amsterdam working across AI and agentic products, developer tools, fintech and payments, blockchain and Web3, marketplaces, B2B and enterprise software, consumer health, and telecom.
+
+## Primary pages
+
+- Portfolio and selected work: https://niplusm.github.io/nplusm/
+- English CV: https://niplusm.github.io/nplusm/cv.html
+- Scientific publication: https://arxiv.org/abs/2606.01969
+- LinkedIn: https://www.linkedin.com/in/nik-mukhortov-5199351ab/
+
+## Case studies
+
+- AI and agentic product design: https://niplusm.github.io/nplusm/cases/agentic.html
+- Trust-Calibrated Code Review research: https://niplusm.github.io/nplusm/cases/codereview.html
+- AI Assistant for VS Code: https://niplusm.github.io/nplusm/cases/vscode.html
+- Rider product portfolio: https://niplusm.github.io/nplusm/cases/rider.html
+- TON Wallet in Telegram: https://niplusm.github.io/nplusm/cases/tonwallet.html
+- TON Foundation relaunch: https://niplusm.github.io/nplusm/cases/ton.html
+- The Open Platform portfolio: https://niplusm.github.io/nplusm/cases/top.html
+- Auto.ru Safe Deal: https://niplusm.github.io/nplusm/cases/autodeal.html
+- Alfa Business foreign trade: https://niplusm.github.io/nplusm/cases/alfa.html
+- SberMobile: https://niplusm.github.io/nplusm/cases/sbermobile.html
+- Simple consumer health: https://niplusm.github.io/nplusm/cases/simple.html
+- Koshelek NFC payments: https://niplusm.github.io/nplusm/cases/koshelek.html

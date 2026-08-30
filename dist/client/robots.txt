@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://niplusm.github.io/nplusm/sitemap.xml
