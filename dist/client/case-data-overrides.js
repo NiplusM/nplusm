@@ -10,7 +10,7 @@
     integratedStory: {
       problemEvidence: 'Developers could delegate a multi-step task, but the brief disappeared into the chat as the transcript grew. Goals, constraints, progress, feedback, and final changes lived in different places, so reviewers could not tell whether the agent had solved the right problem. The wider trust gap was already measurable: 46% of developers distrusted AI-output accuracy, only 33% trusted it, and 66% said AI answers were often almost right rather than reliably correct.',
       directionNarrative: 'Make the brief—not the conversation—the persistent product object. Goal, acceptance criteria, plan, execution, feedback, and review should remain connected throughout the task.',
-      workNarrative: 'I interviewed developers, mapped the moments where they lost control, and designed a five-stage workspace from brief to review. I coded the complete workflow, tested it in moderated sessions, refined the interaction model, and worked with Marketing on the public prototype and waitlist.',
+      workNarrative: 'I interviewed developers, mapped the moments where they lost control, and designed a five-stage workspace from brief to review. I created the prototype’s visual identity and reusable design system from scratch, coded the complete workflow, and tested it in moderated sessions. I refined the interaction model and worked with Marketing on the public prototype and waitlist.',
       resultNarrative: 'JetBrains released the working 5-stage prototype publicly before assigning a full production team. Moderated sessions tested comprehension, steering, and review across the complete brief-to-result flow; the waitlist added a demand signal before the larger engineering commitment.'
     },
     sectionTitles: {
@@ -40,19 +40,26 @@
       { type: 'image', src: 'assets/agentic-ide-review-full.png', title: 'Review evidence against the original criteria', dark: true, className: 'media-frame--agentic-ide', integrity: 'Working coded prototype · 2025', caption: 'Each acceptance criterion carries implementation evidence and remains open to correction.' }
     ],
     impact: {
-      'My contribution': 'Owned the cycle from developer research and product framing to coded prototyping, moderated validation, and the public waitlist launch.',
+      'My contribution': 'Owned developer research, product framing, the new visual identity and prototype design system, coded prototyping, validation, and the public waitlist launch.',
       'Validation evidence': 'Developers tested the complete multi-step workflow before a production team was assigned.'
     }
   });
 
   update('codereview', {
     headline: 'Designing code review for agent-generated changes',
-    deck: 'I co-authored the research, translated 64 practitioner problems into a three-level IDE workflow, and built the reusable prototype system used to validate it.',
+    deck: 'I co-authored the research, translated 64 practitioner problems into an IDE workflow, and turned the prototyping work into an internal AI-assisted design system.',
+    scope: 'Participatory design, developer research, visual identity, AI-assisted design systems, agent skills, React prototyping, hypothesis validation',
     integratedStory: {
       problemEvidence: 'A traditional diff shows what changed, but not why an agent changed it, where confidence is low, or which files deserve attention first. Seventeen developers identified 64 concrete review problems; the product challenge was to help reviewers calibrate trust without inspecting every line equally.',
       directionNarrative: 'Organise review around risk and evidence. Start with the change overview, narrow to the file, then expose rationale and evidence at the exact snippet where a decision is required.',
-      workNarrative: 'I translated the study’s findings into a three-level interaction model and seven recurring review constructs, then built the semi-interactive React prototype used in the evaluation. I also created two reusable agent skills: one moves dynamic web prototypes into an IDE shell; the other applies JetBrains layout, density, components, icons, and states closely enough for credible research without production-plugin engineering.',
-      resultNarrative: 'Forty-three professionals evaluated the interface: 72% said they would use it, 63% expected less review effort, and 52% expected less trust-assessment effort. The validated interaction framework and high-fidelity IDE prototype became the foundation for launching the full product. Two reusable skills also made credible IDE prototypes available to research teams across JetBrains.'
+      workNarrative: [
+        'I translated the study’s findings into a three-level interaction model and seven recurring review constructs, then built the semi-interactive React prototype used in the evaluation.',
+        'I developed the prototype’s new visual identity alongside an internal AI-assisted design system for rapid, vibe-coded research prototypes. I created two reusable agent skills: one moves dynamic web prototypes into an IDE shell; the other applies JetBrains layout, density, components, icons, and interaction states. Together, they let teams assemble realistic IDE workflows without building a production plugin for each study.'
+      ],
+      resultNarrative: [
+        'Forty-three professionals evaluated the interface: 72% said they would use it, 63% expected less review effort, and 52% expected less trust-assessment effort. The validated interaction framework and high-fidelity IDE prototype became the foundation for launching the full product.',
+        'The internal AI-assisted design system extended the work beyond code review. Research teams across JetBrains could reuse the IDE interface and focus on the behaviour they wanted to test. This substantially reduced prototype preparation time and made it faster to run research and validate product hypotheses.'
+      ]
     },
     sectionTitles: {
       challenge: 'A diff cannot explain an agent’s reasoning',
@@ -76,18 +83,22 @@
       { type: 'image', src: 'assets/code-review-prototype-ai-judge.png', title: 'Turn risk and evidence into a review decision', dark: true, integrity: 'Validated research prototype · 2026', caption: 'The final IDE workflow groups findings by risk, exposes evidence beside the code, and keeps the reviewer’s action visible at the point of judgement.' }
     ],
     impact: {
-      'My contribution': 'Co-authored the research, translated the findings into the product model, built the validation prototype, and created two reusable IDE-prototyping skills.',
+      'My contribution': 'Co-authored the research, created the prototype’s visual identity, and developed the internal AI-assisted design system and agent skills for subsequent research.',
       'Validation evidence': '43 professionals evaluated the final interface; 72% would use it, 63% expected less review effort, and 52% expected less trust-assessment effort.'
     }
   });
 
   update('vscode', {
     headline: 'Launching JetBrains AI as a native VS Code workflow',
-    deck: 'I led product framing and interaction design for the public preview, connecting project context, agent progress, multi-file changes, and review inside VS Code.',
+    deck: 'I created the extension’s visual identity and design system from scratch, then led the public-preview experience from project context to multi-file review inside VS Code.',
+    scope: 'New-product strategy, visual identity, design systems from scratch, platform UX, AI interaction, prototyping, validation, launch',
     integratedStory: {
       problemEvidence: 'JetBrains was entering the editor used by 75.9% of Stack Overflow survey respondents. A transplanted JetBrains tool window would feel foreign, while a generic chat would lose the project context and review discipline that made the product useful.',
       directionNarrative: 'Use VS Code’s own structure and conventions, then make project context, execution state, and change review visible inside that familiar shell.',
-      workNarrative: 'I defined the launch jobs, mapped native entry points, and designed the flow from file or project context to chat, multi-file execution, partial application, and review. The first release focused on one coherent project-aware workflow across eight languages rather than feature parity with JetBrains IDEs.',
+      workNarrative: [
+        'I defined the launch jobs, mapped native entry points, and designed the flow from file or project context to chat, multi-file execution, partial application, and review. The first release focused on one coherent project-aware workflow across eight languages rather than feature parity with JetBrains IDEs.',
+        'I created the extension’s visual identity and design system from scratch around VS Code’s native conventions. Reusable components and interaction patterns covered context selection, chat, agent progress, and change review, giving the new product a consistent foundation for prototyping and delivery.'
+      ],
       resultNarrative: 'The extension launched publicly and reached 29,370 unique Marketplace installs in the 24 August 2026 snapshot. My shipped contribution was the product model and launch experience across eight languages.'
     },
     sectionTitles: {
@@ -111,18 +122,22 @@
       { type: 'image', src: 'assets/vscode-agent-review.png', title: 'Review multi-file changes before applying them', dark: true, integrity: 'Public preview workflow · 2025', caption: 'Progress, generated changes, partial acceptance, and rejection remain explicit.' }
     ],
     impact: {
-      'My contribution': 'Led end-to-end product framing and interaction design for the new VS Code surface through public preview.',
+      'My contribution': 'Created the extension’s visual identity and design system from scratch, led product framing, and delivered the interaction design through public preview.',
       'Validation evidence': 'The released workflow connected context, multi-file execution, progress, review, and partial application across eight launch languages.'
     }
   });
 
   update('resharper', {
     headline: 'Adding AI without weakening trusted ReSharper workflows',
-    deck: 'I designed the first ReSharper AI release around four jobs and three native entry points, keeping generative help distinct from deterministic inspections and refactorings.',
+    deck: 'I created the visual identity and design system for ReSharper’s AI experience from scratch and designed its first release around four jobs and three native entry points.',
+    scope: 'Visual identity, design systems from scratch, AI workflow design, contextual actions, prototyping, validation, release',
     integratedStory: {
       problemEvidence: 'ReSharper users already relied on fast, predictable inspections and refactorings inside a product with 3.03 million Marketplace installs and a 4.3/5 rating. A generic AI chat would duplicate trusted tools, hide the code context behind a request, and blur the difference between deterministic and generative actions.',
       directionNarrative: 'Place generative help beside the code and existing IDE actions, but preserve an explicit boundary: deterministic tools stay predictable; AI responses stay reviewable.',
-      workNarrative: 'I defined four launch jobs—chat, explain, identify issues, and generate—and connected them to three familiar entry paths: the main menu, editor context menu, and Alt+Enter. I designed loading, response, apply, reject, and recovery states so AI extended the .NET workflow instead of becoming a separate mode.',
+      workNarrative: [
+        'I defined four launch jobs—chat, explain, identify issues, and generate—and connected them to three familiar entry paths: the main menu, editor context menu, and Alt+Enter.',
+        'I created the visual identity and design system for ReSharper’s AI experience from scratch. It covered reusable interface components and loading, response, apply, reject, and recovery states. The system followed the host IDE’s conventions while keeping generative responses visibly distinct from deterministic inspections and refactorings.'
+      ],
       resultNarrative: 'ReSharper 2023.2 shipped four AI workflow groups through three native entry paths—12 workflow–entry combinations in the first release. Later JetBrains research across AI Assistant users reported that 91% saved time and 71% completed tasks faster.'
     },
     sectionTitles: {
@@ -140,7 +155,7 @@
       { type: 'image', src: 'assets/resharper-vs-ai-actions.png', title: 'Keep generative help beside deterministic tools', dark: true, integrity: 'Released product interface · 2023', caption: 'The assistant extends the existing ReSharper workflow while inspections and refactorings keep their predictable meaning.' }
     ],
     impact: {
-      'My contribution': 'Defined and shipped the first ReSharper AI workflow family and its contextual entry model.',
+      'My contribution': 'Created the AI experience’s visual identity and design system from scratch, then defined its workflows, contextual entry points, and response states.',
       'Validation evidence': 'Four workflow groups were prototyped and reviewed in realistic IDE scenarios before the 2023.2 release.'
     }
   });
@@ -242,7 +257,7 @@
     integratedStory: {
       problemEvidence: 'One foreign-trade operation could require rates, accounts, counterparties, contracts, documents, signatures, and currency-control review. Research with financial directors, accountants, and currency-control specialists showed the same work fragmented across bank-owned forms; the redesign had to unify 5 workflows on 3 product surfaces.',
       directionNarrative: 'Replace separate forms with five end-to-end customer operations—conversion, international transfer, currency control, counterparties, and execution—built on reusable business objects and one status model.',
-      workNarrative: 'I interviewed financial directors, accountants, and currency-control specialists; mapped their journeys; and prototyped the complete workflows. My software-development background helped me connect the new information architecture to reusable counterparties, contracts, and documents, then adapt the model across web, desktop, and mobile.',
+      workNarrative: 'I interviewed financial directors, accountants, and currency-control specialists; mapped their journeys; and prototyped the complete workflows. I created a new visual identity and design system for the foreign-trade experience. My software-development background helped me connect the new information architecture to reusable counterparties, contracts, and documents, then adapt the model across web, desktop, and mobile.',
       resultNarrative: 'The redesign shipped one tested service model across five workflows and three surfaces. Alfa-Bank’s 2018 report recorded the scale of the medium-business unit around the launch: 53,000 active clients, +46% year over year, and operating revenue up 1.6× to RUB 19 billion.'
     },
     sectionTitles: {
@@ -259,7 +274,7 @@
       { type: 'image', src: 'assets/alfa-ved-contractors-en.png', title: 'Keep counterparties as reusable business objects', dark: true, integrity: 'Portfolio reconstruction from project materials · English', caption: 'One counterparty connects contracts, representatives, and transaction history instead of being entered again for every operation.' }
     ],
     impact: {
-      'My contribution': 'Researched, prototyped, and delivered five connected foreign-trade workflows across web, desktop, and mobile.',
+      'My contribution': 'Created the foreign-trade experience’s visual identity and design system, and researched, prototyped, and delivered five workflows across web, desktop, and mobile.',
       'Validation evidence': 'The service model was tested with corporate customers and reused counterparties, contracts, documents, and status logic across operations.'
     },
     sources: [
@@ -270,12 +285,13 @@
 
   update('tonwallet', {
     headline: 'Making a crypto transfer feel like sending a Telegram message',
-    deck: 'I led the core Wallet experience and its Telegram integration across onboarding, portfolio, transfer, exchange, confirmation, and recovery.',
+    deck: 'I created TON Wallet’s visual identity from scratch and led its Telegram experience across onboarding, portfolio, transfer, exchange, confirmation, and recovery.',
     integratedStory: {
       problemEvidence: 'Crypto wallets exposed addresses, networks, fees, and irreversible confirmation to people who expected the speed and familiarity of Telegram. At the start of the native-integration quarter, 382,148 TON wallets were registered; growth depended on removing cross-app handoffs and copied-address risk before the first successful transfer.',
       directionNarrative: 'Use Telegram identity and recipient context to remove address handling, while keeping asset, network, fee, and irreversible confirmation visible at the moment of decision.',
       workNarrative: [
         'I led product design and stayed hands-on across entry from Telegram, first-use education, funding, portfolio, recipient selection, transfer, exchange, and transaction states. The key decision was to use Telegram identity for recipient selection, then reveal network, fees, and irreversible actions when they affected the decision.',
+        'I created TON Wallet’s visual identity from scratch and applied it across the core product experience. The identity gave Wallet its own visual language while the interaction design followed familiar Telegram conventions.',
         'The prototypes covered the full journey, not just the send screen: onboarding, choosing a recipient, understanding the amount and fee, confirming a transaction, waiting for it to complete, and recovering from a failure.',
         'I also worked through the cases that could interrupt that journey: an invalid or wrong recipient, an expired exchange quote, a changed network fee, insufficient funds, and a pending or failed transaction. Pending, failed, and completed transfers needed distinct states so the interface did not suggest that an irreversible payment could simply be undone.'
       ],
@@ -300,7 +316,7 @@
       { type: 'image', src: 'assets/ton-wallet-official-exchange.png', title: 'Keep exchange in the same product shell', dark: true, integrity: 'Official Wallet interface', caption: 'Exchange reused the same review pattern for the asset pair, quote, fee, and final amount. The flow also covered an expired quote, a fee change, and insufficient funds, rather than treating every exchange as an immediate success.' }
     ],
     impact: {
-      'My contribution': 'Led hands-on product design across onboarding, portfolio, transfer, exchange, transaction state, and the Telegram integration.',
+      'My contribution': 'Created TON Wallet’s visual identity from scratch and led hands-on design across onboarding, portfolio, transfer, exchange, transaction states, and Telegram integration.',
       'Validation evidence': 'Prototypes covered onboarding, recipient selection, amount and fee comprehension, confirmation, pending states, and recovery.',
       'Measurement framework': 'Onboarding completion, funded wallets, transaction success, repeat transactions, failed-transfer recovery, and exchange conversion.'
     },
@@ -309,11 +325,14 @@
 
   update('ton', {
     headline: 'Turning a live blockchain into an understandable product',
-    deck: 'I rebuilt TON Foundation’s public product around proof, audience intent, and clear handoffs to documentation, code, tools, wallets, and applications.',
+    deck: 'I created TON Foundation’s visual identity from scratch and rebuilt its public product around network proof and clear paths to documentation, code, wallets, and applications.',
     integratedStory: {
       problemEvidence: 'The inherited public layer looked dormant while the community already operated 115 validators, seven lite servers, three archive nodes, mobile wallets, APIs, and a testnet. Visitors could read about the protocol without seeing proof that the network was active or a path to a useful first action.',
       directionNarrative: 'Lead with observable network proof, then route builders, validators, application teams, and users to the working surface that matches their intent.',
-      workNarrative: 'I researched the four audiences and the decision each needed to make, rebuilt the information architecture, and designed a progressive narrative from network proof to products, primitives, and tools. I owned the content model, reusable interface system, prototype validation, and launch.',
+      workNarrative: [
+        'I researched the four audiences and the decision each needed to make, rebuilt the information architecture, and designed a progressive narrative from network proof to products, primitives, and tools.',
+        'I created TON Foundation’s visual identity from scratch and carried it into the public website and reusable interface system. I owned the content model, prototype validation, and launch, bringing the identity and the audience journeys together in the relaunch.'
+      ],
       resultNarrative: 'The relaunch replaced one protocol-first catalogue with four intent-based activation paths and one maintainable public product and content system. The developer layer continued to grow: TON’s Q2 2023 report recorded 300+ documentation commits, 111 merges, and 32 unique contributors.'
     },
     sectionTitles: {
@@ -325,7 +344,7 @@
     },
     proof: [['115 validators', 'Live network represented at relaunch'], ['4 paths', 'Builders, validators, teams, and users'], ['300+ commits', 'Later Q2 2023 documentation activity']],
     impact: {
-      'My contribution': 'Owned audience research, information architecture, content model, reusable interface system, prototype validation, and launch.',
+      'My contribution': 'Created the visual identity from scratch and owned audience research, information architecture, the reusable interface system, validation, and launch.',
       'Validation evidence': 'Four audience paths connected the public narrative to working documentation, code, tools, wallets, and applications.'
     }
   });
@@ -337,7 +356,10 @@
     integratedStory: {
       problemEvidence: 'TOP’s published history names 4 early portfolio bets, but each had a different mechanism and failure mode. In this case, STON.fi had to make an irreversible swap understandable; Getgems had to create creator supply and collector demand while making ownership and settlement trustworthy.',
       directionNarrative: 'Use one decision model but validate a different core mechanism for every product: frame the opportunity, prove the user problem, test the riskiest interaction, and define the signal required for launch.',
-      workNarrative: 'I built and led a multidisciplinary design team anchored by four product designers and spanning motion, graphic and illustration, and marketing design. I owned hiring, individual goals, performance reviews, development, compensation, and team-composition decisions. In parallel, I built the four-stage portfolio process, led product reviews, aligned founders, product, engineering, and business stakeholders, and joined high-risk launch work. For STON.fi, the review centred on quote comprehension, wallet approval, fees, and transaction states. For Getgems, it centred on collection discovery, creator supply, minting, listing, purchase, and ownership.',
+      workNarrative: [
+        'I created TOP’s visual identity from scratch and built a multidisciplinary design team anchored by four product designers, alongside motion, graphic and illustration, and marketing designers. I owned hiring, individual goals, performance reviews, development, compensation, and team-composition decisions.',
+        'In parallel, I built the four-stage portfolio process, led product reviews, aligned founders, product, engineering, and business stakeholders, and joined high-risk launch work. For STON.fi, the review centred on quote comprehension, wallet approval, fees, and transaction states. For Getgems, it centred on collection discovery, creator supply, minting, listing, purchase, and ownership.'
+      ],
       resultNarrative: 'Getgems launched on TON mainnet on 27 April 2022; STON.fi completed its core protocol launch in Q3 2022. Their later published scale shows the two mechanisms became durable products: STON.fi reports $7.6B in all-time volume, 36.4M swaps, and 5.8M users; TOP reports 4.5M+ connected wallets for Getgems.'
     },
     sectionTitles: {
@@ -371,7 +393,7 @@
       }
     ],
     impact: {
-      'My contribution': 'Built and led a multidisciplinary design team anchored by four product designers and spanning motion, graphic and illustration, and marketing design; owned people management, built the four-stage portfolio model, and led product framing, validation, and launch-readiness reviews for STON.fi and Getgems.',
+      'My contribution': 'Created TOP’s visual identity from scratch, built and managed the multidisciplinary design team, and led portfolio framing, validation, and launch-readiness reviews for STON.fi and Getgems.',
       'Validation evidence': 'Each team had to prove its core user loop, failure states, and launch signal before moving from portfolio opportunity to full delivery.'
     },
     sources: [['The Open Platform portfolio and history', 'https://top.co/about'], ['STON.fi product and roadmap', 'https://ston.fi/'], ['STON.fi portfolio metrics', 'https://top.co/portfolio/ston-fi'], ['Getgems portfolio metrics', 'https://top.co/portfolio/getgems'], ['Getgems mainnet launch', 'https://t.me/s/getgems?before=79']]
@@ -379,11 +401,14 @@
 
   update('simple', {
     headline: 'Turning a fasting timer into a daily programme',
-    deck: 'I connected personalisation, daily guidance, reflection, progress, and subscription value so the product had a reason to bring people back after the timer stopped.',
+    deck: 'I created Simple’s visual identity from scratch and connected personalisation, daily guidance, reflection, and progress into a product people could use beyond the fasting timer.',
     integratedStory: {
       problemEvidence: 'The timer answered one question—how long have I fasted?—but it did not create a reason to return after the timer stopped. During the pivot the product was growing quickly—350,000 new users in December 2019 and more than one million users by February 2020—so daily guidance, reflection, and visible progress had become a retention problem at scale.',
       directionNarrative: 'Turn personal inputs into a useful next action every day, then close the loop with reflection and visible progress.',
-      workNarrative: 'I designed the connected loop from onboarding and profile inputs to a Personal Program, today’s state, the next action, Journal, and progress. I also built the UI kit, prototypes, microinteractions, multi-platform layouts, and product-design process used to deliver it.',
+      workNarrative: [
+        'I designed the connected loop from onboarding and profile inputs to a Personal Program, today’s state, the next action, Journal, and progress.',
+        'I created Simple’s complete visual identity from scratch, then translated it into the UI kit, microinteractions, and multi-platform layouts. I also built the prototypes and product-design process used to deliver the daily programme.'
+      ],
       resultNarrative: 'The daily programme launched during my 2019–2020 product period. Simple reported 350,000 new users in December 2019 and more than one million iOS and Android users by February 2020.'
     },
     sectionTitles: {
@@ -396,7 +421,7 @@
     proof: [['350K', 'New users in December 2019'], ['1M+', 'iOS and Android users by February 2020'], ['Daily programme', 'Product pivot shipped']],
     journey: [['Understand', 'Collect the goals and routine needed for the first useful programme.'], ['Guide', 'Show the current state and the next useful action.'], ['Reflect', 'Capture meals, activity, and feelings without creating a second dashboard.'], ['Progress', 'Connect repeated behaviour to weight, goals, and meaningful recaps.']],
     impact: {
-      'My contribution': 'Designed the connected programme, UI kit, prototypes, microinteractions, and multi-platform delivery system.',
+      'My contribution': 'Created the visual identity from scratch and designed the daily programme, UI kit, prototypes, microinteractions, and multi-platform delivery system.',
       'Validation evidence': 'The product moved from a single timer to a daily loop spanning personalisation, guidance, reflection, and progress.'
     }
   });
