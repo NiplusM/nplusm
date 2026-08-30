@@ -167,6 +167,8 @@ a:focus-visible, button:focus-visible {
 .button:hover { transform: translateY(-2px); }
 .button--solid { background: var(--ink); color: var(--white); }
 .button--light { background: var(--white); color: var(--ink); border-color: var(--white); }
+.button--outline-light { color: var(--white); border-color: rgba(255,255,255,.65); }
+.button--outline-light:hover { background: rgba(255,255,255,.1); }
 
 .publication-card {
   scroll-margin-top: 84px;
@@ -728,6 +730,7 @@ a:focus-visible, button:focus-visible {
 .about__lead { margin: 0; font-size: clamp(30px, 4vw, 58px); line-height: 1.05; letter-spacing: -.045em; }
 .about__copy { max-width: 720px; margin: 36px 0 0; color: #3e3f3b; font-size: 18px; line-height: 1.55; }
 .contact-panel {
+  scroll-margin-top: 80px;
   min-height: 520px;
   padding: clamp(72px, 9vw, 132px) var(--gutter);
   display: flex;
@@ -3662,7 +3665,7 @@ a:focus-visible, button:focus-visible {
 .hero {
   min-height: 0;
   padding: clamp(54px, 6vw, 92px) var(--gutter) clamp(58px, 6.5vw, 96px);
-  grid-template-columns: minmax(0, 1.25fr) minmax(290px, .75fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(44px, 7vw, 112px);
   align-items: start;
 }

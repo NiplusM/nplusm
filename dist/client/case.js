@@ -116,7 +116,7 @@
       return `<div class="work-card__media" aria-label="${attr(label('archive', 'Archive case'))}"><div style="padding:36px;color:#9a9c96;text-align:center;text-transform:uppercase;font-size:11px;letter-spacing:.08em">${escapeHtml(label('archive', 'Focused archive story'))}<br>${escapeHtml(label('historicalScreens', 'Historical English screens pending'))}</div></div>`;
     }
     if (cover.type === 'video') {
-      return `<div class="work-card__media ${attr(cover.className || '')}"><video muted autoplay loop playsinline controls preload="metadata" poster="${attr(assetHref(cover.poster || ''))}"><source src="${attr(assetHref(cover.src))}" type="video/mp4"></video></div>`;
+      return `<div class="work-card__media ${attr(cover.className || '')}"><video muted autoplay loop playsinline controls preload="auto" poster="${attr(assetHref(cover.poster || ''))}"><source src="${attr(assetHref(cover.src))}" type="video/mp4"></video></div>`;
     }
     if (cover.type === 'phones') {
       return `<div class="work-card__media work-card__media--phones ${attr(cover.className || '')}">${cover.srcs.map((src, index) => `<img src="${attr(assetHref(src))}" alt="${attr(item.title)} interface ${index + 1}" ${eager && index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>`).join('')}</div>`;
@@ -551,7 +551,7 @@
     const integrity = media.integrity ? `<span class="integrity-label">${escapeHtml(media.integrity)}.</span>` : '';
     let content = '';
     if (media.type === 'video') {
-      content = `<div class="media-frame ${media.dark ? 'media-frame--dark' : ''} ${attr(media.className || '')}"><video controls muted playsinline preload="metadata" poster="${attr(assetHref(media.poster || ''))}"><source src="${attr(assetHref(media.src))}" type="video/mp4"></video></div>`;
+      content = `<div class="media-frame ${media.dark ? 'media-frame--dark' : ''} ${attr(media.className || '')}"><video controls muted autoplay loop playsinline preload="auto" poster="${attr(assetHref(media.poster || ''))}"><source src="${attr(assetHref(media.src))}" type="video/mp4"></video></div>`;
     } else if (media.type === 'phones') {
       content = `<div class="media-frame media-frame--phones ${media.dark ? 'media-frame--dark' : ''} ${attr(media.className || '')}">${media.srcs.map((src, index) => `<img src="${attr(assetHref(src))}" alt="${attr(item.title)} interface step ${index + 1}" loading="lazy">`).join('')}</div>`;
     } else if (media.type === 'cropPhones') {
@@ -657,4 +657,13 @@
       ${relatedPaper()}
       ${nextCase()}
     </div>`;
+
+  // Start every demo as soon as it is mounted, including videos in the review
+  // iframe. Native controls remain available if browser autoplay is restricted.
+  root.querySelectorAll('video[autoplay]').forEach(video => {
+    video.defaultMuted = true;
+    video.muted = true;
+    const playback = video.play();
+    if (playback && typeof playback.catch === 'function') playback.catch(() => {});
+  });
 })();

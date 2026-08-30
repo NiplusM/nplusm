@@ -274,8 +274,16 @@
     integratedStory: {
       problemEvidence: 'Crypto wallets exposed addresses, networks, fees, and irreversible confirmation to people who expected the speed and familiarity of Telegram. At the start of the native-integration quarter, 382,148 TON wallets were registered; growth depended on removing cross-app handoffs and copied-address risk before the first successful transfer.',
       directionNarrative: 'Use Telegram identity and recipient context to remove address handling, while keeping asset, network, fee, and irreversible confirmation visible at the moment of decision.',
-      workNarrative: 'I designed the journey from entry in Telegram to first-use education, portfolio, contact-based sending, exchange, confirmation, pending states, and recovery. The product stayed simple in routine use and expanded financial detail only where it changed risk or cost.',
-      resultNarrative: 'Wallet shipped as a native Telegram attachment-menu action with four connected journeys. During that launch quarter, registered TON wallets grew from 382,148 to 901,015: +518,867, +136%, or 2.36×. The wider Wallet product later passed 100 million activations.'
+      workNarrative: [
+        'I led product design and stayed hands-on across entry from Telegram, first-use education, funding, portfolio, recipient selection, transfer, exchange, and transaction states. The key decision was to use Telegram identity for recipient selection, then reveal network, fees, and irreversible actions when they affected the decision.',
+        'The prototypes covered the full journey, not just the send screen: onboarding, choosing a recipient, understanding the amount and fee, confirming a transaction, waiting for it to complete, and recovering from a failure.',
+        'I also worked through the cases that could interrupt that journey: an invalid or wrong recipient, an expired exchange quote, a changed network fee, insufficient funds, and a pending or failed transaction. Pending, failed, and completed transfers needed distinct states so the interface did not suggest that an irreversible payment could simply be undone.'
+      ],
+      resultNarrative: [
+        'Wallet shipped as a native Telegram attachment-menu action with four connected journeys: onboarding, portfolio, contact-based transfers, and exchange. People could choose a Telegram contact instead of moving between apps to copy and paste a blockchain address, then review the financial details before confirming.',
+        'During the launch quarter, registered wallets across TON grew from 382,148 to 901,015: 518,867 additional wallets, or 136% growth. The wider Wallet product later passed 100 million activations.',
+        'The success criteria followed the complete funnel: onboarding completion, funded wallets, successful transfers, repeat transactions, recovery after a failed transfer, and exchange conversion. These distinguish opening a wallet from using it successfully and returning to it.'
+      ]
     },
     sectionTitles: {
       challenge: 'Crypto transfers were too technical for a messaging context',
@@ -284,20 +292,19 @@
       chapters: 'From first open to confirmed transaction',
       result: 'A native Wallet flow inside Telegram'
     },
-    proof: [['382K → 901K', 'Registered wallets in the launch quarter'], ['+136%', 'Quarter growth during native integration'], ['100M+', 'Later Wallet activations']],
+    proof: [['382K → 901K', 'Registered wallets across the TON network'], ['+136%', 'TON network growth in the launch quarter'], ['100M+', 'Later Wallet activations']],
     journey: [['Enter', 'Open Wallet from Telegram and understand the first useful action.'], ['Choose', 'Select a Telegram contact instead of copying a blockchain address.'], ['Review', 'Check the asset, amount, network, fee, and recipient before money moves.'], ['Resolve', 'See confirmation, pending, failure, and recovery in the same product shell.']],
     media: [
-      { type: 'video', src: 'assets/telegram-payments-2-pizza.mp4', poster: 'assets/telegram-payments-2-pizza-poster.png', title: 'Platform context: complete a food order inside Telegram', integrity: 'Official Telegram Payments 2.0 release · not presented as my work', caption: 'The public Telegram flow connects product choice, delivery, payment, tip, and receipt. It establishes the chat-native commerce expectation Wallet later had to meet for crypto transactions.' },
-      { type: 'video', src: 'assets/telegram-bot-payments-2017.mp4', poster: 'assets/telegram-bot-payments-2017-poster.png', title: 'Platform context: a public payment API, not just a Pay button', integrity: 'Official Telegram Bot Payments release · not presented as my work', caption: 'The public API demonstrates checkout, shipping, provider confirmation, and receipt inside chat; Wallet applies the same continuity to blockchain assets and irreversible transfers.' },
-      { type: 'image', src: 'assets/ton-wallet-official-ton.png', title: 'Enter through a familiar Telegram surface', dark: true, integrity: 'Official Wallet interface', caption: 'Portfolio, assets, and primary actions live inside Telegram instead of beginning with a separate wallet setup.' },
-      { type: 'image', src: 'assets/ton-wallet-official-transfer.png', title: 'Choose a contact, then review the transfer', dark: true, integrity: 'Official Wallet interface', caption: 'Recipient, amount, fee, and confirmation stay in one compact decision without copied blockchain addresses.' },
-      { type: 'image', src: 'assets/ton-wallet-official-exchange.png', title: 'Keep exchange in the same product shell', dark: true, integrity: 'Official Wallet interface', caption: 'Asset pair, quote, fee, and confirmation follow the same financial-decision pattern.' }
+      { type: 'image', src: 'assets/ton-wallet-official-ton.png', title: 'From first open to a funded wallet', dark: true, integrity: 'Official Wallet interface', caption: 'First-use education led into adding or receiving an asset with clear network context. Balance, assets, and the next useful action stayed inside Telegram, so users did not have to learn a separate application before making their first transfer.' },
+      { type: 'image', src: 'assets/ton-wallet-official-transfer.png', title: 'Choose a contact, then review the transfer', dark: true, integrity: 'Official Wallet interface', caption: 'Telegram identity replaced the address-copying handoff. The review still had to make the recipient, asset, amount, network, and fee explicit before an irreversible action. Confirmation, pending, and failure states carried the journey beyond the tap on Send.' },
+      { type: 'image', src: 'assets/ton-wallet-official-exchange.png', title: 'Keep exchange in the same product shell', dark: true, integrity: 'Official Wallet interface', caption: 'Exchange reused the same review pattern for the asset pair, quote, fee, and final amount. The flow also covered an expired quote, a fee change, and insufficient funds, rather than treating every exchange as an immediate success.' }
     ],
     impact: {
       'My contribution': 'Led hands-on product design across onboarding, portfolio, transfer, exchange, transaction state, and the Telegram integration.',
-      'Validation evidence': 'The released product connected four core journeys inside one messenger-native interaction model.'
+      'Validation evidence': 'Prototypes covered onboarding, recipient selection, amount and fee comprehension, confirmation, pending states, and recovery.',
+      'Measurement framework': 'Onboarding completion, funded wallets, transaction success, repeat transactions, failed-transfer recovery, and exchange conversion.'
     },
-    sources: [['Wallet product', 'https://wallet.tg/'], ['100M+ activation milestone', 'https://top.co/insights/ton-wallet-launches-in-usa'], ['Telegram Payments 2.0', 'https://telegram.org/blog/payments-2-0-scheduled-voice-chats?setln=en'], ['Telegram Bot Payments API', 'https://core.telegram.org/bots/payments']]
+    sources: [['Wallet product', 'https://wallet.tg/'], ['TON Q2 2022 report', 'https://t.me/s/toncoin?before=499'], ['100M+ activation milestone', 'https://top.co/insights/ton-wallet-launches-in-usa']]
   });
 
   update('ton', {
