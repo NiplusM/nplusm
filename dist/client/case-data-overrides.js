@@ -254,10 +254,11 @@
   update('alfa', {
     headline: 'Rebuilding foreign-trade banking around customer operations',
     deck: 'I redesigned five complex corporate workflows around the work customers needed to complete, then carried one service model across web, desktop, and mobile.',
+    scope: 'B2B fintech, customer interviews, journey mapping, prototyping, usability testing, KPI framework, service design',
     integratedStory: {
       problemEvidence: 'One foreign-trade operation could require rates, accounts, counterparties, contracts, documents, signatures, and currency-control review. Research with financial directors, accountants, and currency-control specialists showed the same work fragmented across bank-owned forms; the redesign had to unify 5 workflows on 3 product surfaces.',
       directionNarrative: 'Replace separate forms with five end-to-end customer operations—conversion, international transfer, currency control, counterparties, and execution—built on reusable business objects and one status model.',
-      workNarrative: 'I interviewed financial directors, accountants, and currency-control specialists; mapped their journeys; and prototyped the complete workflows. I created a new visual identity and design system for the foreign-trade experience. My software-development background helped me connect the new information architecture to reusable counterparties, contracts, and documents, then adapt the model across web, desktop, and mobile.',
+      workNarrative: 'I interviewed financial directors, accountants, and currency-control specialists; mapped their journeys; and prototyped the complete workflows. My software-development background helped me connect the new information architecture to reusable counterparties, contracts, and documents, then adapt the model across web, desktop, and mobile.',
       resultNarrative: 'The redesign shipped one tested service model across five workflows and three surfaces. Alfa-Bank’s 2018 report recorded the scale of the medium-business unit around the launch: 53,000 active clients, +46% year over year, and operating revenue up 1.6× to RUB 19 billion.'
     },
     sectionTitles: {
@@ -274,7 +275,7 @@
       { type: 'image', src: 'assets/alfa-ved-contractors-en.png', title: 'Keep counterparties as reusable business objects', dark: true, integrity: 'Portfolio reconstruction from project materials · English', caption: 'One counterparty connects contracts, representatives, and transaction history instead of being entered again for every operation.' }
     ],
     impact: {
-      'My contribution': 'Created the foreign-trade experience’s visual identity and design system, and researched, prototyped, and delivered five workflows across web, desktop, and mobile.',
+      'My contribution': 'Researched, prototyped, and delivered five connected foreign-trade workflows across web, desktop, and mobile.',
       'Validation evidence': 'The service model was tested with corporate customers and reused counterparties, contracts, documents, and status logic across operations.'
     },
     sources: [

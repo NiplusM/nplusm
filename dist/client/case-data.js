@@ -398,7 +398,7 @@ window.CASES = {
     deck: 'I redesigned Alfa-Bank’s foreign-trade experience around the jobs corporate customers needed to complete: conversion, international transfer, currency control, counterparties, and execution status.',
     period: '2017—2018',
     role: 'Product Designer · previously Software Developer in the same team',
-    scope: 'B2B fintech, customer interviews, journey mapping, prototyping, usability testing, KPI framework, design system',
+    scope: 'B2B fintech, customer interviews, journey mapping, prototyping, usability testing, KPI framework, service design',
     product: 'Alfa Business · Foreign Trade',
     integratedStory: {
       problemEvidence: 'Foreign-trade customers had to assemble rates, accounts, counterparties, contracts, documents, signatures, and currency-control requirements across interfaces organised around the bank’s internal structure. The product made a single customer task feel like a sequence of unrelated forms, with missing data and rejection reasons appearing late.',
