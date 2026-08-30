@@ -330,7 +330,7 @@
     integratedStory: {
       problemEvidence: 'TOP’s published history names 4 early portfolio bets, but each had a different mechanism and failure mode. In this case, STON.fi had to make an irreversible swap understandable; Getgems had to create creator supply and collector demand while making ownership and settlement trustworthy.',
       directionNarrative: 'Use one decision model but validate a different core mechanism for every product: frame the opportunity, prove the user problem, test the riskiest interaction, and define the signal required for launch.',
-      workNarrative: 'I managed the product-design team across hiring, individual goals, performance reviews, development, compensation, and team composition. In parallel, I built the four-stage portfolio process, led product reviews, aligned founders, product, engineering, and business stakeholders, and joined high-risk launch work. For STON.fi, the review centred on quote comprehension, wallet approval, fees, and transaction states. For Getgems, it centred on collection discovery, creator supply, minting, listing, purchase, and ownership.',
+      workNarrative: 'I built and led a multidisciplinary design team anchored by four product designers and spanning motion, graphic and illustration, and marketing design. I owned hiring, individual goals, performance reviews, development, compensation, and team-composition decisions. In parallel, I built the four-stage portfolio process, led product reviews, aligned founders, product, engineering, and business stakeholders, and joined high-risk launch work. For STON.fi, the review centred on quote comprehension, wallet approval, fees, and transaction states. For Getgems, it centred on collection discovery, creator supply, minting, listing, purchase, and ownership.',
       resultNarrative: 'Getgems launched on TON mainnet on 27 April 2022; STON.fi completed its core protocol launch in Q3 2022. Their later published scale shows the two mechanisms became durable products: STON.fi reports $7.6B in all-time volume, 36.4M swaps, and 5.8M users; TOP reports 4.5M+ connected wallets for Getgems.'
     },
     sectionTitles: {
@@ -364,7 +364,7 @@
       }
     ],
     impact: {
-      'My contribution': 'Managed the product-design team, built and ran the four-stage portfolio model, and led product framing, validation, and launch-readiness reviews for early products including STON.fi and Getgems.',
+      'My contribution': 'Built and led a multidisciplinary design team anchored by four product designers and spanning motion, graphic and illustration, and marketing design; owned people management, built the four-stage portfolio model, and led product framing, validation, and launch-readiness reviews for STON.fi and Getgems.',
       'Validation evidence': 'Each team had to prove its core user loop, failure states, and launch signal before moving from portfolio opportunity to full delivery.'
     },
     sources: [['The Open Platform portfolio and history', 'https://top.co/about'], ['STON.fi product and roadmap', 'https://ston.fi/'], ['STON.fi portfolio metrics', 'https://top.co/portfolio/ston-fi'], ['Getgems portfolio metrics', 'https://top.co/portfolio/getgems'], ['Getgems mainnet launch', 'https://t.me/s/getgems?before=79']]
