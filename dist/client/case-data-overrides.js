@@ -10,8 +10,8 @@
     integratedStory: {
       problemEvidence: 'Developers could delegate a multi-step task, but the brief disappeared into the chat as the transcript grew. Goals, constraints, progress, feedback, and final changes lived in different places, so reviewers could not tell whether the agent had solved the right problem. The wider trust gap was already measurable: 46% of developers distrusted AI-output accuracy, only 33% trusted it, and 66% said AI answers were often almost right rather than reliably correct.',
       directionNarrative: 'Make the brief—not the conversation—the persistent product object. Goal, acceptance criteria, plan, execution, feedback, and review should remain connected throughout the task.',
-      workNarrative: 'I interviewed developers, mapped the moments where they lost control, and designed a five-stage workspace from brief to review. I coded and tested the complete workflow using a visual identity and reusable design system I created for the prototype. I refined the interaction model and worked with Marketing on the public prototype and waitlist.',
-      resultNarrative: 'JetBrains released the working 5-stage prototype publicly before assigning a full production team. Moderated sessions tested comprehension, steering, and review across the complete brief-to-result flow; the waitlist added a demand signal before the larger engineering commitment.'
+      workNarrative: 'I interviewed developers, mapped the moments where they lost control, and designed a five-stage workspace from brief to review. I coded and tested the complete workflow using reusable IDE components and an internal AI-assisted prototyping system. I refined the interaction model and worked with Marketing on the public prototype and waitlist.',
+      resultNarrative: 'JetBrains released the working five-stage prototype publicly before a full production commitment. Moderated sessions tested comprehension, steering and review across the complete brief-to-result flow. The waitlist invited further participation; public signup and task-success figures are not available, so it is not presented as a proven adoption result.'
     },
     sectionTitles: {
       challenge: 'Chat was the wrong place to manage agent work',
@@ -25,7 +25,7 @@
     proof: [
       ['46% distrust', 'Public benchmark for AI-output accuracy'],
       ['Five stages', 'Brief to review'],
-      ['Public waitlist', 'Demand evidence before full build']
+      ['Public waitlist', 'Recruitment for further validation · not an adoption metric']
     ],
     journey: [
       ['Brief', 'Keep the goal and acceptance criteria visible.'],
@@ -52,8 +52,8 @@
     integratedStory: {
       problemEvidence: 'A traditional diff shows what changed, but not why an agent changed it, where confidence is low, or which files deserve attention first. Seventeen developers identified 64 concrete review problems; the product challenge was to help reviewers calibrate trust without inspecting every line equally.',
       directionNarrative: 'Organise review around risk and evidence. Start with the change overview, narrow to the file, then expose rationale and evidence at the exact snippet where a decision is required.',
-      workNarrative: 'I translated the study’s findings into a three-level interaction model and seven recurring review constructs, then built the semi-interactive React prototype used in the evaluation. I also created the prototype’s visual identity and an internal AI-assisted design system, making it faster for research teams to build IDE prototypes and validate hypotheses.',
-      resultNarrative: 'Forty-three professionals evaluated the interface: 72% said they would use it, 63% expected less review effort, and 52% expected less trust-assessment effort. The validated interaction framework and high-fidelity IDE prototype became the foundation for launching the full product.'
+      workNarrative: 'I translated the study’s findings into a three-level interaction model and seven recurring review constructs, then built the semi-interactive React prototype used in the evaluation. The work also informed an internal AI-assisted design system, making it faster for research teams to build IDE prototypes and validate hypotheses.',
+      resultNarrative: 'Forty-three professionals evaluated the interface: 72% said they would use it, 63% expected less review effort, and 52% expected less trust-assessment effort. These are respondent expectations, not measured reductions in review time. The interaction framework and IDE prototype informed subsequent product work; the June 2026 publication is an arXiv preprint.'
     },
     sectionTitles: {
       challenge: 'A diff cannot explain an agent’s reasoning',
@@ -126,7 +126,7 @@
       problemEvidence: 'ReSharper users already relied on fast, predictable inspections and refactorings inside a product with 3.03 million Marketplace installs and a 4.3/5 rating. A generic AI chat would duplicate trusted tools, hide the code context behind a request, and blur the difference between deterministic and generative actions.',
       directionNarrative: 'Place generative help beside the code and existing IDE actions, but preserve an explicit boundary: deterministic tools stay predictable; AI responses stay reviewable.',
       workNarrative: 'I defined four launch jobs—chat, explain, identify issues, and generate—and connected them to three familiar entry paths: the main menu, editor context menu, and Alt+Enter. I designed loading, response, apply, reject, and recovery states so AI extended the .NET workflow instead of becoming a separate mode. This included a visual identity and design system created from scratch for the AI experience.',
-      resultNarrative: 'ReSharper 2023.2 shipped four AI workflow groups through three native entry paths—12 workflow–entry combinations in the first release. Later JetBrains research across AI Assistant users reported that 91% saved time and 71% completed tasks faster.'
+      resultNarrative: 'ReSharper 2023.2 shipped contextual chat, explanation, issue detection and generation through familiar IDE entry points. The release established the AI interaction model inside Visual Studio. The 3.03M Marketplace installs and 4.3/5 rating describe the whole ReSharper product, not adoption or impact of the AI feature.'
     },
     sectionTitles: {
       challenge: 'AI could not blur trusted ReSharper actions',
@@ -136,7 +136,7 @@
       result: 'Shipped in ReSharper 2023.2'
     },
     cover: { type: 'image', src: 'assets/resharper-ai-explain.png', className: 'work-card__media--clean-ui work-card__media--desktop-cover' },
-    proof: [['12', 'Workflow–entry combinations shipped'], ['3.03M', 'Marketplace installs at product scale'], ['4.3 / 5', 'Marketplace rating']],
+    proof: [['2023.2', 'AI Assistant release'], ['3.03M', 'ReSharper-wide Marketplace installs · August 2026 snapshot'], ['4.3 / 5', 'ReSharper-wide Marketplace rating · August 2026 snapshot']],
     journey: [['Select', 'Start from code, an issue, or an editor action.'], ['Ask', 'Pass context to a focused AI workflow.'], ['Review', 'Inspect the generated explanation or change.'], ['Apply', 'Accept, revise, or discard the result.']],
     media: [
       { type: 'image', src: 'assets/resharper-ai-explain.png', title: 'Start from the selected code', integrity: 'Released product interface · 2023', caption: 'Native entry points carry the relevant code context into a focused explain, generate, or refactor action.' },
@@ -214,7 +214,7 @@
     integratedStory: {
       problemEvidence: 'Auto.ru helped people find a car and contact a seller, but the transaction then moved off-platform into cash, manual document checks, and improvised coordination. More than 60% of online auto loans were being cashed out, and one in five people had encountered—or knew someone who had encountered—fraud in a private-car purchase.',
       directionNarrative: 'Give each participant a role-specific checklist, then connect both sides through one shared deal status that always shows who needs to act next.',
-      workNarrative: 'I mapped the buyer and seller journeys separately: four preparation tasks for the buyer, five for the seller. I designed the shared status model across the deal page and chat, plus identity recognition, corrections, bank checks, protected funds, handover, cancellation, non-response, and recovery.',
+      workNarrative: 'I mapped the buyer and seller journeys separately, identifying what each participant needed to prepare and when the other person needed to act. I designed the shared status model across the deal page and chat, plus identity recognition, corrections, bank checks, protected funds, handover, cancellation, non-response, and recovery.',
       resultNarrative: 'Auto.ru and Tinkoff launched Safe Deal in October 2021. The released service connected buyer, seller, bank, and operations through identity and vehicle checks, contract preparation, protected payment, and handover. The published online process was designed to take no more than 15 minutes.'
     },
     sectionTitles: {
@@ -224,7 +224,7 @@
       chapters: 'One deal state across the page and chat',
       result: 'A private-car transaction in 15 minutes or less'
     },
-    proof: [['≤15 min', 'Published launch service time'], ['4 buyer tasks', 'Role-specific preparation'], ['5 seller tasks', 'Role-specific preparation']],
+    proof: [['October 2021', 'Public launch with Tinkoff'], ['≤15 min', 'Published process time · not a measured improvement'], ['Buyer and seller', 'Connected transaction journeys']],
     journey: [
       ['Enter', 'Explain Safe Deal in the listing or chat where both sides already communicate.'],
       ['Prepare', 'Give the buyer four tasks and the seller five role-specific tasks.'],
@@ -412,19 +412,19 @@
     headline: 'Designing the moment a phone becomes a payment card',
     deck: 'I designed the complete Android NFC journey from eligible card and device readiness to terminal feedback, confirmation, decline, and safe retry.',
     integratedStory: {
-      problemEvidence: 'Visa reported that nine in ten Visa transactions in Russia were already contactless, while the wider Koshelek app had 7M+ users. The critical payment moment still happened between two devices: the customer had to know whether the phone or terminal owned the next step, whether processing was underway, and whether retrying could create a duplicate charge.',
+      problemEvidence: 'The critical payment moment happened between two devices: the customer had to know whether the phone or terminal owned the next step, whether processing was underway, and whether retrying could create a duplicate charge. The November 2020 Visa release reported that nine in ten Visa transactions in Russia were contactless, illustrating the scale of this use case.',
       directionNarrative: 'Treat provisioning, phone readiness, terminal interaction, and payment result as one state machine with an unambiguous next action at every step.',
       workNarrative: 'I researched and prototyped the complete journey across supported-card recognition, provisioning, NFC and default-wallet checks, tap guidance, processing, success, decline, and safe recovery.',
-      resultNarrative: 'Koshelek Pay expanded from two Mastercard partner banks to six Visa issuers: 3× coverage, or +200%. During the rollout, the wider app audience grew from 7M+ to 16M users, a 2.3× distribution surface. The same payment-state model supported Huawei/AppGallery and Belarus launches.'
+      resultNarrative: 'I delivered the Android payment journey during June–October 2020. The Visa launch on 23 November 2020 supported six banks and reported a wider app audience of 16 million. These are launch-scope and platform-scale figures, not a measured conversion gain from my design. The earlier two-bank Mastercard launch used a different payment network and is not a comparable growth baseline.'
     },
     sectionTitles: {
       challenge: 'The hardest payment moment happens between phone and terminal',
       direction: 'Make every payment state unambiguous',
       process: 'Design provisioning and payment as one journey',
       chapters: 'From eligible card to confirmed tap',
-      result: 'Mastercard launch and a six-bank Visa rollout'
+      result: 'A payment journey for the six-bank Visa launch'
     },
-    proof: [['2 → 6 issuers', '3× rollout coverage'], ['7M → 16M', 'Wider app audience during expansion'], ['5 states', 'End-to-end payment journey']],
+    proof: [['6 banks', 'Visa launch · 23 November 2020'], ['16M', 'Wider app audience · November 2020, not Pay users'], ['Android NFC', 'Provisioning, payment and recovery']],
     cover: { type: 'cropPhones', srcs: ['assets/koshelek-pay-add-card-interface-only.png', 'assets/koshelek-pay-wallet-interface-only.png', 'assets/koshelek-pay-android-nfc-interface-only.png'], dark: true, className: 'koshelek-interface-crops' },
     media: [
       { type: 'cropPhones', title: 'Provision and select a payment card', srcs: ['assets/koshelek-pay-add-card-interface-only.png','assets/koshelek-pay-wallet-interface-only.png'], className: 'koshelek-interface-crops', integrity: 'Designed interface · interface-only crop', caption: 'Card setup and selection make eligibility, the active card, and readiness visible before the terminal interaction begins.' },
@@ -433,28 +433,29 @@
     journey: [['Provision', 'Recognise an eligible card and explain the security step.'], ['Prepare', 'Confirm the active card, NFC, and default-wallet state.'], ['Tap', 'Make the next physical action clear.'], ['Resolve', 'Distinguish processing, success, decline, uncertainty, and safe retry.']],
     impact: {
       'My contribution': 'Researched and designed the complete Android NFC payment state machine from provisioning to recovery.',
-      'Validation evidence': 'The journey shipped across Mastercard and Visa issuer rollouts and later platform and market extensions.'
+      'Release evidence': 'The November 2020 Visa release documents six participating banks. Public data does not isolate the effect of the redesigned payment journey.'
     }
   });
 
   update('sbermobile', {
+    sources: [['32 regions · April 2019', 'https://sbermobile.ru/about/news/teper_polzovatsya_servisami_sbermobayl_smogut_zhiteli_32_regionov_rossii.html'], ['500K active subscribers · October 2019', 'https://sbermobile.ru/about/news/sbermobayl_dostig_otmetki_v_polmilliona_aktivnyh_abonentov.html']],
     headline: 'From a plan in Sberbank Online to an active mobile service',
     deck: 'I designed the connected customer and employee journey across tariff selection, order, fulfilment, activation, payment, and self-service.',
     integratedStory: {
       problemEvidence: 'The pilot generated 10,000+ first-week connections across four regions, but each SIM purchase still crossed Sberbank Online, telecom systems, delivery, activation, payment, and employee tools. At rollout speed, any state mismatch could turn paid demand into an unactivated order.',
       directionNarrative: 'Treat the purchase as one connected service: configure the plan, reuse known customer data, expose delivery and order status, then carry the active number into recurring account management.',
       workNarrative: 'Using the original project flow as the backbone, I designed dynamic tariff configuration, prefilled customer and address data, delivery-slot selection, order status in Sberbank Online, and the post-activation balance, bundle, payment, and support journey.',
-      resultNarrative: 'The connected journey shipped across customer and employee touchpoints. During the product period, SberMobile moved from 10,000+ first-week connections to 500,000 active subscribers; rollout expanded from four to 50 regions—12.5× coverage, or +1,150%.'
+      resultNarrative: 'The connected journey shipped across customer and employee touchpoints. During my role, the service was available in 32 regions by April 2019. After my role ended in June, SberMobile reported 500,000 active subscribers on 15 October 2019. That later company milestone shows the scale of the service, not an independently measured effect of my design.'
     },
     sectionTitles: {
       challenge: 'A paid order could fail between the bank and the mobile service',
       direction: 'Make the SIM order legible from configuration to activation',
       process: 'Connect customer, delivery, telecom, and employee states',
       chapters: 'One order flow, then a recurring service',
-      result: '500,000 active subscribers across 50 regions'
+      result: 'A connected service that could support regional rollout'
     },
     cover: { type: 'image', src: 'assets/sbermobile-behance-order-crop-en.png', className: 'work-card__media--clean-ui work-card__media--sber-clean-interface' },
-    proof: [['10K+ → 500K', 'Connections to active subscribers'], ['4 → 50 regions', '12.5× rollout coverage'], ['5 journeys', 'Selection through support']],
+    proof: [['32 regions', 'Service availability · April 2019'], ['500K', 'Later company milestone · October 2019'], ['5 journeys', 'Selection through support']],
     journey: [['Configure', 'Reveal tariff options as the customer changes data, minutes, messages, and unlimited services.'], ['Fulfil', 'Reuse customer data, choose delivery, and keep the order status visible inside Sberbank Online.'], ['Manage', 'After activation, expose balance, bundles, payment methods, and support as one recurring service.']],
     media: [
       { type: 'image', src: 'assets/sbermobile-behance-order-crop-en.png', title: 'Configure and submit the SIM order', className: 'media-frame--sber-behance-crop', integrity: 'Original Behance interface · English portfolio translation · 2018—2019', caption: 'The original plan builder shows the tariff changing with data, minutes, messages, and unlimited-service choices.' },

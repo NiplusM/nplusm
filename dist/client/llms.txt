@@ -2,7 +2,7 @@
 
 Canonical site: https://niplusm.github.io/nplusm/
 
-Nikita Mukhortov is a Product Design Lead in Amsterdam working across AI and agentic products, developer tools, fintech and payments, blockchain and Web3, marketplaces, B2B and enterprise software, consumer health, and telecom.
+Nikita Mukhortov is an Amsterdam-based product designer positioning for Staff Product Designer roles in AI and developer tools. His current employment title is Product Design Lead, AI & R&D at JetBrains. His work covers product strategy, user research, coded prototyping, design systems and cross-functional delivery, with earlier experience in fintech, Web3, marketplaces, consumer health and telecom.
 
 ## Primary pages
 
@@ -16,6 +16,7 @@ Nikita Mukhortov is a Product Design Lead in Amsterdam working across AI and age
 - AI and agentic product design: https://niplusm.github.io/nplusm/cases/agentic.html
 - Trust-Calibrated Code Review research: https://niplusm.github.io/nplusm/cases/codereview.html
 - AI Assistant for VS Code: https://niplusm.github.io/nplusm/cases/vscode.html
+- ReSharper AI Assistant: https://niplusm.github.io/nplusm/cases/resharper.html
 - Rider product portfolio: https://niplusm.github.io/nplusm/cases/rider.html
 - TON Wallet in Telegram: https://niplusm.github.io/nplusm/cases/tonwallet.html
 - TON Foundation relaunch: https://niplusm.github.io/nplusm/cases/ton.html
